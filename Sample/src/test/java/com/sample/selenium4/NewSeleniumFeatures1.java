@@ -11,7 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import com.sample.base.Base;
 
-public class NewSeleniumFeatures extends Base {
+public class NewSeleniumFeatures1 extends Base {
 
 	@Test(priority=1)
 	public void seleniumScreenShot() throws IOException {
