@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.sample.selenium4.NewSeleniumFeatures">
+      <class name="com.sample.selenium4.NewSeleniumFeatures1">
         <methods>
           <include name="seleniumScreenShot"/>
-          <include name="newTab"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.sample.selenium4.NewSeleniumFeatures -->
+      </class> <!-- com.sample.selenium4.NewSeleniumFeatures1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
