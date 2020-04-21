@@ -1,14 +1,17 @@
 package com.sample.selenium4;
 
-import org.testng.annotations.Test;
 import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
+import org.testng.annotations.Test;
+
 import com.sample.base.Base;
 
 public class NewSeleniumFeatures1 extends Base {
@@ -17,8 +20,8 @@ public class NewSeleniumFeatures1 extends Base {
 	public void seleniumScreenShot() throws IOException {
 		
 		System.out.println(driver.getTitle());
-		WebElement logo= driver.findElement(By.xpath("//body[@id='gsr']/div[@id='viewport']/div[@id='main']/span[@id='body']/center/div[@id='lga']/div[@id='hplogo']/a/img[1]"));
-		
+		WebElement logo= driver.findElement(By.id("hplogo"));
+		highliter(logo, driver);
 		File srcFile=logo.getScreenshotAs(OutputType.FILE);
 		File destFile= new File("logo.png");
 		FileUtils.copyFile(srcFile, destFile);
@@ -57,5 +60,11 @@ public class NewSeleniumFeatures1 extends Base {
 		System.out.println("X Location : "+logo.getRect().getX());
 		System.out.println("Y Location : "+logo.getRect().getY());
 		
+	}
+	
+	void highliter(WebElement element, WebDriver driver) {
+		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].style.border='2px solid red'", element);
 	}
 }

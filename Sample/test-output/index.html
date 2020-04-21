@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sample.selenium4.NewSeleniumFeatures1" hash-for-method="seleniumScreenShot">seleniumScreenShot</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">9 methods,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,7 +102,27 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sample.selenium4.NewSeleniumFeatures3" hash-for-method="consolLog">consolLog</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sample.selenium4.NewSeleniumFeatures3" hash-for-method="insecureWebsite">insecureWebsite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sample.selenium4.NewSeleniumFeatures1" hash-for-method="locationOfElement">locationOfElement</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sample.selenium4.NewSeleniumFeatures3" hash-for-method="networkOffline">networkOffline</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sample.selenium4.NewSeleniumFeatures3" hash-for-method="networkOnline">networkOnline</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -134,6 +140,11 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sample.selenium4.NewSeleniumFeatures2" hash-for-method="relativeLocators">relativeLocators</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sample.selenium4.NewSeleniumFeatures1" hash-for-method="seleniumScreenShot">seleniumScreenShot</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -146,44 +157,42 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.sample.selenium4.NewSeleniumFeatures1</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.sample.selenium4.NewSeleniumFeatures3</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="seleniumScreenShot">
-                  </a> <!-- seleniumScreenShot -->
-                  <span class="method-name">seleniumScreenShot</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body[@id=&apos;gsr&apos;]/div[@id=&apos;viewport&apos;]/div[@id=&apos;main&apos;]/span[@id=&apos;body&apos;]/center/div[@id=&apos;lga&apos;]/div[@id=&apos;hplogo&apos;]/a/img[1]&quot;}
-  (Session info: chrome=81.0.4044.113)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.0.0-alpha-5&apos;, revision: &apos;b3a0d621cc&apos;
-System info: host: &apos;DESKTOP-K5LD16K&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.113, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\Varsha\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e40c959d63b717d79e9e7a1f8056f1f5
-*** Element info: {Using=xpath, value=//body[@id=&apos;gsr&apos;]/div[@id=&apos;viewport&apos;]/div[@id=&apos;main&apos;]/span[@id=&apos;body&apos;]/center/div[@id=&apos;lga&apos;]/div[@id=&apos;hplogo&apos;]/a/img[1]}
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:394)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
-	at com.sample.selenium4.NewSeleniumFeatures1.seleniumScreenShot(NewSeleniumFeatures1.java:20)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
+                  <a name="consolLog">
+                  </a> <!-- consolLog -->
+                  <span class="method-name">consolLog</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="insecureWebsite">
+                  </a> <!-- insecureWebsite -->
+                  <span class="method-name">insecureWebsite</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="networkOffline">
+                  </a> <!-- networkOffline -->
+                  <span class="method-name">networkOffline</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="networkOnline">
+                  </a> <!-- networkOnline -->
+                  <span class="method-name">networkOnline</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -226,6 +235,13 @@ Session ID: e40c959d63b717d79e9e7a1f8056f1f5
                   <span class="method-name">newWindow</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="seleniumScreenShot">
+                  </a> <!-- seleniumScreenShot -->
+                  <span class="method-name">seleniumScreenShot</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
@@ -242,6 +258,7 @@ Session ID: e40c959d63b717d79e9e7a1f8056f1f5
     &lt;classes&gt;
       &lt;class name=&quot;com.sample.selenium4.NewSeleniumFeatures1&quot;/&gt;
       &lt;class name=&quot;com.sample.selenium4.NewSeleniumFeatures2&quot;/&gt;
+      &lt;class name=&quot;com.sample.selenium4.NewSeleniumFeatures3&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -255,7 +272,7 @@ Session ID: e40c959d63b717d79e9e7a1f8056f1f5
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -281,32 +298,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'newWindow')
 data.setCell(0, 2, 'com.sample.selenium4.NewSeleniumFeatures1')
-data.setCell(0, 3, 9550);
+data.setCell(0, 3, 8529);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'newTab')
 data.setCell(1, 2, 'com.sample.selenium4.NewSeleniumFeatures1')
-data.setCell(1, 3, 4742);
+data.setCell(1, 3, 4858);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'locationOfElement')
-data.setCell(2, 2, 'com.sample.selenium4.NewSeleniumFeatures1')
-data.setCell(2, 3, 2493);
+data.setCell(2, 1, 'relativeLocators')
+data.setCell(2, 2, 'com.sample.selenium4.NewSeleniumFeatures2')
+data.setCell(2, 3, 2794);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'relativeLocators')
-data.setCell(3, 2, 'com.sample.selenium4.NewSeleniumFeatures2')
-data.setCell(3, 3, 2006);
+data.setCell(3, 1, 'insecureWebsite')
+data.setCell(3, 2, 'com.sample.selenium4.NewSeleniumFeatures3')
+data.setCell(3, 3, 2575);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'seleniumScreenShot')
+data.setCell(4, 1, 'locationOfElement')
 data.setCell(4, 2, 'com.sample.selenium4.NewSeleniumFeatures1')
-data.setCell(4, 3, 147);
+data.setCell(4, 3, 1229);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'networkOffline')
+data.setCell(5, 2, 'com.sample.selenium4.NewSeleniumFeatures3')
+data.setCell(5, 3, 1074);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'seleniumScreenShot')
+data.setCell(6, 2, 'com.sample.selenium4.NewSeleniumFeatures1')
+data.setCell(6, 3, 425);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'networkOnline')
+data.setCell(7, 2, 'com.sample.selenium4.NewSeleniumFeatures3')
+data.setCell(7, 3, 392);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'consolLog')
+data.setCell(8, 2, 'com.sample.selenium4.NewSeleniumFeatures3')
+data.setCell(8, 3, 378);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -321,9 +354,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.sample.selenium4.NewSeleniumFeatures3</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.sample.selenium4.NewSeleniumFeatures2</span>
               <div class="ignored-methods-div">
@@ -346,37 +388,70 @@ return data;
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sample.selenium4.NewSeleniumFeatures3</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">devToolsSetIp</span>
+                <span class="method-start">9086 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sample.selenium4.NewSeleniumFeatures1</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">seleniumScreenShot</span>
-                <span class="method-start">9623 ms</span>
+                <span class="method-start">9233 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">newTab</span>
-                <span class="method-start">9785 ms</span>
+                <span class="method-start">9664 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">newWindow</span>
-                <span class="method-start">14530 ms</span>
+                <span class="method-start">14528 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">locationOfElement</span>
-                <span class="method-start">24085 ms</span>
+                <span class="method-start">23062 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.sample.selenium4.NewSeleniumFeatures2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">relativeLocators</span>
-                <span class="method-start">26584 ms</span>
+                <span class="method-start">24296 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sample.selenium4.NewSeleniumFeatures3</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">networkOffline</span>
+                <span class="method-start">27093 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">networkOnline</span>
+                <span class="method-start">28173 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">consolLog</span>
+                <span class="method-start">28573 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">insecureWebsite</span>
+                <span class="method-start">28957 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">devToolsTearDown</span>
+                <span class="method-start">31541 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.sample.selenium4.NewSeleniumFeatures1</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28691 ms</span>
+                <span class="method-start">41614 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

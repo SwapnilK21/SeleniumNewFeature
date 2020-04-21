@@ -9,35 +9,32 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">19,000</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">32,478</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.sample.selenium4.NewSeleniumFeatures1</td><td><a href="#m0">seleniumScreenShot</a></td><td rowspan="1">1587444305456</td><td rowspan="1">147</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.sample.selenium4.NewSeleniumFeatures1</td><td><a href="#m1">locationOfElement</a></td><td rowspan="1">1587444319918</td><td rowspan="1">2493</td></tr><tr class="passedeven"><td><a href="#m2">newTab</a></td><td rowspan="1">1587444305618</td><td rowspan="1">4742</td></tr><tr class="passedeven"><td><a href="#m3">newWindow</a></td><td rowspan="1">1587444310363</td><td rowspan="1">9550</td></tr><tr class="passedodd"><td rowspan="1">com.sample.selenium4.NewSeleniumFeatures2</td><td><a href="#m4">relativeLocators</a></td><td rowspan="1">1587444322417</td><td rowspan="1">2006</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.sample.selenium4.NewSeleniumFeatures3</td><td><a href="#m0">devToolsTearDown</a></td><td rowspan="1">1587454828403</td><td rowspan="1">10019</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.sample.selenium4.NewSeleniumFeatures1</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1587454838476</td><td rowspan="1">-1587454838476</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.sample.selenium4.NewSeleniumFeatures1</td><td><a href="#m2">locationOfElement</a></td><td rowspan="1">1587454819924</td><td rowspan="1">1229</td></tr><tr class="passedeven"><td><a href="#m3">newTab</a></td><td rowspan="1">1587454806526</td><td rowspan="1">4858</td></tr><tr class="passedeven"><td><a href="#m4">newWindow</a></td><td rowspan="1">1587454811390</td><td rowspan="1">8529</td></tr><tr class="passedeven"><td><a href="#m5">seleniumScreenShot</a></td><td rowspan="1">1587454806095</td><td rowspan="1">425</td></tr><tr class="passedodd"><td rowspan="1">com.sample.selenium4.NewSeleniumFeatures2</td><td><a href="#m6">relativeLocators</a></td><td rowspan="1">1587454821158</td><td rowspan="1">2794</td></tr><tr class="passedeven"><td rowspan="4">com.sample.selenium4.NewSeleniumFeatures3</td><td><a href="#m7">consolLog</a></td><td rowspan="1">1587454825435</td><td rowspan="1">378</td></tr><tr class="passedeven"><td><a href="#m8">insecureWebsite</a></td><td rowspan="1">1587454825819</td><td rowspan="1">2575</td></tr><tr class="passedeven"><td><a href="#m9">networkOffline</a></td><td rowspan="1">1587454823955</td><td rowspan="1">1074</td></tr><tr class="passedeven"><td><a href="#m10">networkOnline</a></td><td rowspan="1">1587454825035</td><td rowspan="1">392</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.sample.selenium4.NewSeleniumFeatures1#seleniumScreenShot</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body[@id=&apos;gsr&apos;]/div[@id=&apos;viewport&apos;]/div[@id=&apos;main&apos;]/span[@id=&apos;body&apos;]/center/div[@id=&apos;lga&apos;]/div[@id=&apos;hplogo&apos;]/a/img[1]&quot;}
-  (Session info: chrome=81.0.4044.113)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+<h2>Test</h2><h3 id="m0">com.sample.selenium4.NewSeleniumFeatures3#devToolsTearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
 Build info: version: &apos;4.0.0-alpha-5&apos;, revision: &apos;b3a0d621cc&apos;
 System info: host: &apos;DESKTOP-K5LD16K&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.113, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\Varsha\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e40c959d63b717d79e9e7a1f8056f1f5
-*** Element info: {Using=xpath, value=//body[@id=&apos;gsr&apos;]/div[@id=&apos;viewport&apos;]/div[@id=&apos;main&apos;]/span[@id=&apos;body&apos;]/center/div[@id=&apos;lga&apos;]/div[@id=&apos;hplogo&apos;]/a/img[1]}
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:394)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
-	at com.sample.selenium4.NewSeleniumFeatures1.seleniumScreenShot(NewSeleniumFeatures1.java:20)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.sample.selenium4.NewSeleniumFeatures1#locationOfElement</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.sample.selenium4.NewSeleniumFeatures1#newTab</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.sample.selenium4.NewSeleniumFeatures1#newWindow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.sample.selenium4.NewSeleniumFeatures2#relativeLocators</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+Driver info: driver.version: unknown
+	at org.openqa.selenium.devtools.Connection.sendAndWait(Connection.java:106)
+	at org.openqa.selenium.devtools.DevTools.close(DevTools.java:50)
+	at com.sample.selenium4.NewSeleniumFeatures3.devToolsTearDown(NewSeleniumFeatures3.java:54)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at org.openqa.selenium.devtools.Connection.sendAndWait(Connection.java:95)
+	... 26 more
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.sample.selenium4.NewSeleniumFeatures1#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.sample.selenium4.NewSeleniumFeatures1#locationOfElement</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.sample.selenium4.NewSeleniumFeatures1#newTab</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.sample.selenium4.NewSeleniumFeatures1#newWindow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.sample.selenium4.NewSeleniumFeatures1#seleniumScreenShot</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.sample.selenium4.NewSeleniumFeatures2#relativeLocators</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.sample.selenium4.NewSeleniumFeatures3#consolLog</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.sample.selenium4.NewSeleniumFeatures3#insecureWebsite</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.sample.selenium4.NewSeleniumFeatures3#networkOffline</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.sample.selenium4.NewSeleniumFeatures3#networkOnline</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
