@@ -16,7 +16,7 @@ public class Base {
 	{
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		driver.get("https://www.google.com");
+		driver.get("https://www.hp.com/us-en/shop");
 		driver.manage().window().maximize();
 	}
 	

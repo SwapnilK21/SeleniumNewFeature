@@ -20,7 +20,7 @@ public class NewSeleniumFeatures1 extends Base {
 	public void seleniumScreenShot() throws IOException {
 		
 		System.out.println(driver.getTitle());
-		WebElement logo= driver.findElement(By.id("hplogo"));
+		WebElement logo= driver.findElement(By.xpath("//i[@class='icon icon-hp-logo']"));
 		highliter(logo, driver);
 		File srcFile=logo.getScreenshotAs(OutputType.FILE);
 		File destFile= new File("logo.png");
@@ -48,8 +48,8 @@ public class NewSeleniumFeatures1 extends Base {
 	@Test(priority=4)
 	public void locationOfElement()
 	{
-		driver.get("http://www.bing.com");
-		WebElement logo=driver.findElement(By.xpath("//*[name()='path' and contains(@d,'M10 38.642')]"));
+		driver.get("http://www.google.com");
+		WebElement logo=driver.findElement(By.xpath("//*[@alt=\"Google\"]"));
 		System.out.println(driver.getTitle());
 		
 		System.out.println("Size : "+logo.getSize());
