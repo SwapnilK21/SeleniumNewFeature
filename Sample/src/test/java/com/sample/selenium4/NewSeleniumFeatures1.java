@@ -18,7 +18,7 @@ public class NewSeleniumFeatures1 extends Base {
 
 	@Test(priority=1)
 	public void seleniumScreenShot() throws IOException {
-		
+		System.out.println("********************************************");
 		System.out.println(driver.getTitle());
 		WebElement logo= driver.findElement(By.xpath("//i[@class='icon icon-hp-logo']"));
 		highliter(logo, driver);
@@ -59,7 +59,7 @@ public class NewSeleniumFeatures1 extends Base {
 		
 		System.out.println("X Location : "+logo.getRect().getX());
 		System.out.println("Y Location : "+logo.getRect().getY());
-		
+		System.out.println("********************************************");
 	}
 	
 	void highliter(WebElement element, WebDriver driver) {
