@@ -4,23 +4,20 @@ pipeline {
         stage('Build') { 
             steps {
                 // 
-                bat "cd SeleniumNewFeature/Sample"
-                bat "mvn clean"
+                bat "mvn clean -f Sample"
                 
             }
         }
         stage('Test') { 
             steps {
                 // 
-                bat "cd SeleniumNewFeature/Sample"
-                bat "mvn test"
+                bat "mvn test -f Sample"
             }
         }
         stage('Deploy') { 
             steps {
                 // 
-                bat "cd SeleniumNewFeature/Sample"
-                bat "mvn package"
+                bat "mvn package -f Sample"
             }
         }
     }
